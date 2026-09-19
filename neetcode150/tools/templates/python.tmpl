@@ -1,0 +1,36 @@
+"""
+{title}  [{difficulty}]
+{category}
+
+LeetCode: {leetcode}
+NeetCode: {neetcode}
+
+Pattern:
+Time:   O(?)
+Space:  O(?)
+
+The idea in one sentence (write this AFTER you solve it — this is the part
+you'll actually reread before an interview):
+
+Where I got stuck:
+"""
+from typing import List, Optional
+
+
+class Solution:
+    def solve(self, *args):
+        ...
+
+
+# (args_tuple, expected)
+TESTS = [
+    # (([1, 2, 3, 1],), True),
+]
+
+if __name__ == "__main__":
+    s = Solution()
+    for i, (args, want) in enumerate(TESTS, 1):
+        got = s.solve(*args)
+        print(f"{{'PASS' if got == want else 'FAIL'}} #{{i}}  got={{got!r}} want={{want!r}}")
+    if not TESTS:
+        print("No tests yet — add a couple of cases to TESTS.")
