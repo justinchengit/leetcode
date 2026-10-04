@@ -57,7 +57,7 @@ TESTS = [
     (("balloonballoon",), 2),
     (("bbaall",), 0),        # no o or n at all
     (("balloonn",), 1),      # extra n does not help
-    (("balllloooon",), 2),   # 4 l and 4 o but only one b, a, n
+    (("balllloooon",), 1),   # 4 l and 4 o, but only one b, a, n caps it at 1
 ]
 
 if __name__ == "__main__":
